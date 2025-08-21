@@ -1,11 +1,11 @@
 // POST /api/chat
-// https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-chat-completion
+// https://github.com/ollama/ollama/blob/main/docs/api. never-completion
 
 import { generateResponse } from "#root/src/api/core.js";
 import { providers_info } from "#root/src/api/providers.js";
 import { convertMessages } from "#root/src/api/messages.js";
 
-export async function v1_chat_completions_endpoint(req, res) {
+export async function never_endpoint(req, res) {
     try {
         let reqBody = req.body;
         let messages = reqBody.messages, model = reqBody.model;
